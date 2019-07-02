@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="225dp"
+        android:layout_height="97dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="13dp"
+        android:text="24!"
+        android:gravity="center"
+        android:textColor="@android:color/black"
+        android:textSize="80sp"
+        android:textStyle="bold"
+        android:layout_gravity="center_vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/deck"
+        android:layout_width="wrap_content"
+        android:layout_height="163dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="135dp"
+        android:layout_marginLeft="135dp"
+        android:layout_marginTop="124dp"
+        android:layout_marginEnd="142dp"
+        android:layout_marginRight="142dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/gray_back" />
+
+    <LinearLayout
+        android:id="@+id/card_layout"
+        android:layout_width="374dp"
+        android:layout_height="154dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginBottom="54dp"
+        android:orientation="horizontal"
+        android:weightSum="4">
+
+        <ImageView
+            android:id="@+id/card1"
+            android:layout_width="97dp"
+            android:layout_height="130dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/gray_back" />
+
+        <ImageView
+            android:id="@+id/card2"
+            android:layout_width="100dp"
+            android:layout_height="130dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/gray_back" />
+
+        <ImageView
+            android:id="@+id/card3"
+            android:layout_width="100dp"
+            android:layout_height="130dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/gray_back" />
+
+        <ImageView
+            android:id="@+id/card4"
+            android:layout_width="109dp"
+            android:layout_height="130dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/gray_back" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/Deal"
+        android:layout_width="174dp"
+        android:layout_height="76dp"
+        android:layout_centerInParent="true"
+        android:text="Deal new cards!" />
+
+
+</RelativeLayout>
